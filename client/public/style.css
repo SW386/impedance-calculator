@@ -1,0 +1,119 @@
+.body {
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-size:0.7rem;
+    font-family:'Noto Sans JP', sans-serif;
+}
+
+.btn-outline-primary {
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
+}
+
+select {
+    border: 1.25px solid lightgray;
+}
+
+input {
+    width:57%;
+    padding-left:2%;
+    border-radius:10px;
+    border: 1.25px solid lightgray;
+}
+
+form {
+    text-align:left;
+}
+
+.impedance input {
+    width:30%
+}
+.impedance .real {
+    width:25%
+}
+
+.ComplexSelect {
+    margin-left:1%
+}
+
+.calcDiv {
+    margin-top:1rem;
+    margin-bottom:1rem
+}
+
+.circuit {
+    max-width:100%;
+    max-height:100%;
+}
+
+.circuitDiv {
+    text-align:center;
+    margin-left:-60%
+}
+
+@media (max-width:768px) {
+    .circuit {
+        max-width:100%;
+        max-height:100%;
+        margin-left:-20%
+    }
+    .calcDiv {
+        font-size:0.50rem;
+    }
+    .body h5{
+        margin-left:-21%;
+    }
+}
+
+@media (max-width:351px) {
+    .circuitFont h5 {
+        text-align:center;
+        font-weight:bold;
+        font-size:0.93rem;
+    }
+}
+
+.circuitFont {
+    text-align:center;
+    font-weight:bold;
+    margin-left:-61%
+}
+
+img {
+    opacity:80%
+}
+
+.form {
+    padding-left:17%;
+}
+
+.screen {
+    background-color:#FAFAFA;
+}
+
+.calculator {
+    background-color:rgb(248, 248, 248);
+    border:0.6px solid lightgray;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(237,237,237,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(237,237,237,1);
+    box-shadow: 10px 10px 5px 0px rgba(237,237,237,1);
+}
+
+.commentInput {
+    text-align:center;
+}
+
+.commentInput input {
+    width:30%
+}
+
+.commentInput .body {
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.commentInput textarea {
+    width:60%;
+    height:60px;
+    border:1px solid lightgray
+}
