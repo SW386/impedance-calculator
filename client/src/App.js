@@ -2,6 +2,7 @@ import React from "react"
 import CalculatorBody from "./Components/CalculatorBody"
 import Menu from "./Components/Menu"
 import CommentInput from "./Components/CommentInput"
+import Comments from "./Components/Comments"
 import {Container,Row,Col,Card} from "reactstrap";
 
 class App extends React.Component {
@@ -53,6 +54,7 @@ class App extends React.Component {
               </div>
             </Col>
           </Row>
+          <Comments/>
       </Container>  
   </div>
   }

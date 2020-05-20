@@ -15,7 +15,7 @@ class CommentInput extends React.Component {
         this.setState({[event.target.name]:event.target.value});
     }
     handleSubmit(event) {
-        console.log(this.state);
+        axios.post("/comment", this.state);
     }
     render() {
         return <div>
