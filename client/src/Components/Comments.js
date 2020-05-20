@@ -17,13 +17,14 @@ class Comments extends React.Component {
     }
 
     render() {
-        console.log(this.state);
         if(this.state.comments.length < 1) {
             return null;
         } else {
             var comments = []
+            var count = -1;
             this.state.comments.forEach(comment => {
-                comments.push(<Row>
+                count+=1;
+                comments.push(<div key={"comment" + count}><Row>
                     <Col sm={{ size: 10, order: 2, offset: 1}}>
                         <div className = "commentBody">
                         <Card>
@@ -46,9 +47,9 @@ class Comments extends React.Component {
                         </Card>
                         </div>
                     </Col>
-                </Row>)
+                </Row></div>)
             })
-            return comments
+            return comments.reverse();
         }
     }
 

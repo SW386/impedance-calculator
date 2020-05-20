@@ -29,17 +29,15 @@ class ZInput extends React.Component {
             }
         } else {
             this.setState({[event.target.name] : parseInt(event.target.value)});
-            if(parseInt(event.target.value)===0){
-                var clone = [this.state.resistance,this.state.inductance,this.state.capacitance]
-                if(event.target.name==="resistance"){
-                    clone[0] = 0;
-                } else if (event.target.name==="inductance"){
-                    clone[1] = 0;
-                } else {
-                    clone[2] = 0;
-                }
-                this.props.getNumber(clone);
+            var data = [this.state.resistance,this.state.inductance,this.state.capacitance]
+            if(event.target.name==="resistance"){
+                data[0] = parseInt(event.target.value);
+            } else if (event.target.name==="inductance"){
+                data[1] = parseInt(event.target.value);
+            } else if (event.target.name==="capacitance") {
+                data[2] = parseInt(event.target.value);
             }
+            this.props.getNumber(data);
         }
     }
 
