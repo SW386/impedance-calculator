@@ -74,15 +74,14 @@ class Screen extends React.Component {
             var combine = null;
             var reMag = 0;
             var imPhase = 0;
-            var prefix = null;
-            var unit = null;
+            var prefix = "";
+            var unit = "\u03A9";
             var suffix = null;
             if(this.state.representation === "phasor") {
                 if (typeof(this.props.display.mag)==="number") {
                     const display = this.optimizeOutput(this.props.display,this.props.calcType);
                     reMag = display.number.mag.toFixed(3);
                     imPhase = this.props.display.phase.toFixed(3);
-                    unit = display.unit;
                     prefix = display.prefix;
                 }
                 combine = "\u2220"
@@ -92,7 +91,6 @@ class Screen extends React.Component {
                     const display = this.optimizeOutput(this.props.display,this.props.calcType);
                     reMag = display.number.re.toFixed(3);
                     imPhase = display.number.im.toFixed(3);
-                    unit = display.unit;
                     prefix = display.prefix;
                 }
                 combine = "+"
